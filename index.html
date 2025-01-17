@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+
+    <div id="messages_title">
+        <p1>Messages:</p1>
+    </div>
+
+    <div id="messages">
+    </div>
+
+    <form id="textarea_holder">
+        <input type="text" id="message" placeholder="type...">
+        <button type="submit" id="sendBtn">Send!</button>
+    </form>
+
+</body>
+<script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script defer src="script.js"></script>
+</html>

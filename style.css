@@ -1,0 +1,31 @@
+#message {
+    border-color: blue;
+    width: 600px;
+    height: 75px;
+    resize: none;
+}
+
+#textarea_holder {
+    text-align: center;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+#messages {
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    width: 98%;
+    max-height: 415px;
+    overflow-y: scroll;
+}
+
+.mess {
+    color: darkblue;
+}
+
+#messages_title{
+    text-align: center;
+}
