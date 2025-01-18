@@ -1,5 +1,5 @@
 //const socket = io('http://localhost:3000')
-const socket = io('http://localhost:3000', { transports : ['websocket'] })
+const socket = io('https://chrisrandall777.github.io/chatRoom/:3000', { transports : ['websocket'] })
 
 var messageBox = document.getElementById('message')
 var messagesDiv = document.getElementById("messages")
