@@ -2,7 +2,7 @@
 //const socket = io()
 const socket = io('http://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000', { transports : ['websocket'], 
   cors: {
-    origin: "http://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000",
+    origin: "https://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000",
     methods: ["GET", "POST"]
   }
  })
