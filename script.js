@@ -1,11 +1,12 @@
 //const socket = io('http://localhost:3000')
 //const socket = io()
-const socket = io('http://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000', { transports : ['websocket'], 
-  cors: {
-    origin: "wss://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000",
-    methods: ["GET", "POST"]
-  }
- })
+// const socket = io('http://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000', { transports : ['websocket'], 
+//   cors: {
+//     origin: "http://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000",
+//     methods: ["GET", "POST"]
+//   }
+//  })
+const socket = io.connect('http://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000', { transports : ['websocket']})
 
 var messageBox = document.getElementById('message')
 var messagesDiv = document.getElementById("messages")
