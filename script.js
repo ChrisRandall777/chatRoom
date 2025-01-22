@@ -6,10 +6,12 @@
 //     methods: ["GET", "POST"]
 //   }
 //  })
-const socket = io('ws://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000', { transports : ['websocket'], cors : {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "POST, GET, PUT, DELETE, OPTIONS"
-}})
+// const socket = io('wss://2601:246:4d80:c080:91b3:bb96:300d:7b0b:3000', { transports : ['websocket'], cors : {
+//   "Access-Control-Allow-Origin": "*",
+//   "Access-Control-Allow-Headers": "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept",
+//   "Access-Control-Allow-Methods": "POST, GET, PUT, DELETE, OPTIONS"
+// }})
+const socket = io('http://localhost:3000', { transports : ['websocket']})
 
 var messageBox = document.getElementById('message')
 var messagesDiv = document.getElementById("messages")
