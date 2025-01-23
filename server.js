@@ -4,7 +4,10 @@
 //import 
 //import express from "express";
 //import socketio from "socket.io";
-const io = require('socket.io')(3000)
+var http = require('http')
+var server = http.createServer()
+server.listen(3000)
+const io = require('socket.io')(server)
 
 // const app = express();
 // const server = http.createServer(app);
