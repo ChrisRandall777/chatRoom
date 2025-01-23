@@ -9,12 +9,12 @@
 // const server = http.createServer(app);
 // const io = socketio(server);
 
-// var http = require('http')
-// var server = http.createServer()
-// server.listen(3000)
-// const io = require('socket.io')(server)
+var http = require('http')
+var server = http.createServer()
+server.listen(3000)
+const io = require('socket.io')(server)
 
-const io = require('socket.io')(3000)
+//const io = require('socket.io')(3000)
 
 
 io.on('connection', socket => {
