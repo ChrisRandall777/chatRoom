@@ -11,11 +11,9 @@
 //   "Access-Control-Allow-Headers": "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept",
 //   "Access-Control-Allow-Methods": "POST, GET, PUT, DELETE, OPTIONS"
 // }})
-const socket = io('http://192.168.154.1:3000', { transports : ['websocket'], cors : {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept",
-    "Access-Control-Allow-Methods": "POST, GET, PUT, DELETE, OPTIONS",
-  }})
+const socket = io('http://192.168.154.1:3000', { transports : ['websocket'], cors: {
+  "Access-Control-Allow-Origin": "*"
+}})
 
 var messageBox = document.getElementById('message')
 var messagesDiv = document.getElementById("messages")
